@@ -1,6 +1,7 @@
 import { BuiltinTypeName } from '@angular/compiler';
 import { Component, OnInit } from '@angular/core';
 import { CourseService } from '../services/course.service';
+import {FavouriteComponent  } from "../favourite/favourite.component";
 
 @Component({
   selector: 'app-course',
@@ -21,9 +22,12 @@ export class CourseComponent implements OnInit {
   courses: any;
   isActive= true;
 
+ 
   onClick(){
     console.log("button was clicekd");
     this.isActive = !this.isActive;
   }
+
+  
 
 }
