@@ -28,6 +28,11 @@ export class CourseComponent implements OnInit {
     this.isActive = !this.isActive;
   }
 
+  OnFavouriteChange(faza : any){
+    console.log("favourite changed from "+faza+" to "+!faza );
+    
+  }
+
   
 
 }

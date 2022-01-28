@@ -7,9 +7,9 @@ export class CourseService {
 
   constructor() { }
   courses = [ 
-    "course 1",
-    "course 2",
-    "course 3"
+    {name : "course 1",isFavourite:true},
+    {name : "course 2",isFavourite:false},
+    {name : "course 3",isFavourite:false}
   ]
   getCourses(){
     return this.courses;
